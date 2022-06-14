@@ -14,7 +14,7 @@ RUN apt-get update --yes && \
 COPY sudoers.d/sudoers.conf /etc/sudoers
 RUN chown root:root /etc/sudoers
 
-RUN useradd -m localuser1 && useradd -m localuser2 
+RUN useradd -m localuser1 && useradd -m localuser2 && useradd -m localuser3
 
 RUN mkdir -p /var/spool/our_queue && mkdir /reports && chmod 700 /reports \
     && mkdir -p /archives
