@@ -19,6 +19,11 @@ case $1 in
 	docker run -it --rm --user localuser2 --workdir /home/localuser2 sudo-challenge
 	;;
 
+	3)
+	echo Finders Weepers
+	docker run -it --rm --user localuser3 --workdir /home/localuser3 sudo-challenge
+	;;
+
 	*)
 	echo Enter a number from 1-2.
 	exit 1
