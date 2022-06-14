@@ -1,10 +1,11 @@
 #!/bin/sh
 
 if [ -z "$1" ] ; then
-	echo "Usage: $0 [1-2]"
+	echo "Usage: $0 [1-3]"
 	echo; echo Challenge List:
 	echo 1: So Su Me
 	echo 2: Copy Challenge
+	echo 3: Finders Weepers
 	exit 1
 fi
 
@@ -25,7 +26,7 @@ case $1 in
 	;;
 
 	*)
-	echo Enter a number from 1-2.
+	echo Enter a number from 1-3.
 	exit 1
 	;;
 esac
