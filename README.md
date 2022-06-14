@@ -15,5 +15,5 @@ docker
 
 ### Running challenges
 ```bash
-./bin/challenge.sh [1..2]
+./bin/challenge.sh [1..3]
 ```
