@@ -18,7 +18,7 @@ Check out our [CTF 2022 hacking primer](https://docs.google.com/presentation/d/1
 
 ### Running challenges
 ```bash
-./bin/challenge.sh [1..3]
+./bin/challenge.sh [1..21]
 ```
 
 _Have fun, and if you want to work on cool projects with us, check out our [job openings](https://networkninja.com/jobs/)._
