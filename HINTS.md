@@ -4,7 +4,7 @@ Here are hints for the challenges.
 SUDO rule: localuser1	ALL=(ALL) NOPASSWD: /bin/su *, !/bin/su root
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Does that ! do what the author of rule intended it to do?
 </details>
 
@@ -12,7 +12,7 @@ Does that ! do what the author of rule intended it to do?
 SUDO rule: localuser2	ALL=(ALL) NOPASSWD: /bin/cp
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 You can copy any file, including one you wrote, to anywhere on the system, including overwriting files already in place!
 </details>
 
@@ -20,7 +20,7 @@ You can copy any file, including one you wrote, to anywhere on the system, inclu
 SUDO rule: localuser3	ALL=(ALL) NOPASSWD: /bin/cp * /var/tmp
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Have you thought about what a symbolic link could do for you?
 </details>
 
@@ -28,7 +28,7 @@ Have you thought about what a symbolic link could do for you?
 SUDO rule: localuser4	ALL=(ALL) NOPASSWD: /bin/cp /var/tmp/* /tmp/*
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Try connecting the dots?
 </details>
 
@@ -36,7 +36,7 @@ Try connecting the dots?
 SUDO rule: localuser5	ALL=(ALL) NOPASSWD: /usr/bin/view
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Read that man page again.
 </details>
 
@@ -44,7 +44,7 @@ Read that man page again.
 SUDO rule: localuser6	ALL=(ALL) NOPASSWD: /usr/bin/find /var -name [A-Za-z0-9]*
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Check those command line arguments for find again.
 </details>
 
@@ -52,7 +52,7 @@ Check those command line arguments for find again.
 SUDO rule: localuser7	ALL=(ALL) NOPASSWD: /bin/more /var/log/*
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Have you tried typing h?
 </details>
 
@@ -60,7 +60,7 @@ Have you tried typing h?
 SUDO rule: localuser8	ALL=(ALL) NOPASSWD: /bin/tar [ctx]f /backup.tar *
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Run "pwd", and consider that for a moment.
 </details>
 
@@ -68,7 +68,7 @@ Run "pwd", and consider that for a moment.
 SUDO rule: localuser9	ALL=(ALL) NOPASSWD: /usr/bin/passwd *, !/usr/bin/passwd root
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Consider the ! and the *.
 </details>
 
@@ -76,7 +76,7 @@ Consider the ! and the *.
 SUDO rule: localuser10	ALL=(ALL) NOPASSWD: /usr/bin/top
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Re-read that top man page.
 </details>
 
@@ -84,7 +84,7 @@ Re-read that top man page.
 SUDO rule: localuser11	ALL=(ALL) NOPASSWD: /bin/chown localuser11 /var/spool/our_queue/[a-z][a-z][a-z]/?
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Concentrate on the '?'.
 </details>
 
@@ -92,7 +92,7 @@ Concentrate on the '?'.
 SUDO rule: localuser12	ALL=(ALL) NOPASSWD: /usr/bin/watch du -hs /var
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Are you on the right *path*?
 </details>
 
@@ -100,7 +100,7 @@ Are you on the right *path*?
 SUDO rule: localuser13	ALL=(ALL) NOPASSWD: /bin/chmod [ugoa][-+=][rwxXst] /var/spool/our_queue/[a-z][a-z][a-z]/?
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Try re-reading the chmod man page.
 </details>
 
@@ -108,7 +108,7 @@ Try re-reading the chmod man page.
 SUDO rule: localuser14	ALL=(ALL) NOPASSWD:SETENV: /bin/ls
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Look at sudo -l again, and read all the things.
 </details>
 
@@ -116,7 +116,7 @@ Look at sudo -l again, and read all the things.
 SUDO rule: localuser15	ALL=(ALL) NOPASSWD: /usr/bin/htop
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 To find the right path, hit h and go through all the features.
 </details>
 
@@ -124,7 +124,7 @@ To find the right path, hit h and go through all the features.
 SUDO rule: localuser16	ALL=(ALL) NOPASSWD: /usr/bin/rsync -a /app/dir1/ /app/dir2
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Try ldd and re-read the man page.
 </details>
 
@@ -132,7 +132,7 @@ Try ldd and re-read the man page.
 SUDO rule: localuser17	ALL=(ALL) NOPASSWD: /bin/ls /reports/, /bin/cat, /usr/local/bin/sudo_report.sh
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 This one is hard, but I have sed that before.
 </details>
 
@@ -140,7 +140,7 @@ This one is hard, but I have sed that before.
 SUDO rule: localuser18	ALL=(ALL) NOPASSWD: /usr/local/bin/admin_task.sh, /usr/local/bin/kill_admin.pl
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 Hmm... system() eh?
 </details>
 
@@ -148,7 +148,7 @@ Hmm... system() eh?
 SUDO rule: localuser19	ALL=(ALL) NOPASSWD: /usr/local/bin/dir_archive.sh
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 $F <-- Hmm...
 </details>
 
@@ -156,7 +156,7 @@ $F <-- Hmm...
 SUDO rule: localuser20	ALL=(ALL) NOPASSWD: /usr/local/bin/motd.py
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 What's this dash e doing in here?
 </details>
 
@@ -164,6 +164,6 @@ What's this dash e doing in here?
 SUDO rule: localuser21	ALL=(ALL) NOPASSWD: /usr/local/bin/qa_users.py, /usr/local/bin/rm_qa_users.sh, /bin/su - mail_qa_*
 
 <details>
-  <summary>Hint<summary>
+  <summary>Hint</summary>
 This one is real hard, no hints for you!
 </details>
